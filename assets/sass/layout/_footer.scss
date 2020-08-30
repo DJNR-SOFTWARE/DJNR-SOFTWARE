@@ -1,0 +1,63 @@
+/* Footer */
+
+#footer {
+  @include color(accent2);
+  @include padding(2rem, 0);
+  background: linear-gradient(
+    135deg,
+    _palette(accent1, bg) 0%,
+    _palette(accent2, bg) 74%
+  );
+
+  a {
+    color: _palette(accent2, fg);
+    text-decoration: none;
+
+    &:hover {
+      color: _palette(accent1, bg);
+    }
+  }
+
+  .copyright {
+    font-size: 1.1rem;
+    padding: _size(element-margin) 0;
+    text-align: center;
+  }
+
+  @include breakpoint("<=large") {
+    @include padding(4rem, 0);
+  }
+
+  @include breakpoint("<=medium") {
+    .content {
+      @include vendor("flex-wrap", "wrap");
+
+      section {
+        width: 50%;
+
+        &:first-child {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @include breakpoint("<=small") {
+    @include padding(3rem, 0);
+
+    .content {
+      section {
+        width: 100%;
+
+        &:last-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include padding(2rem, 0);
+  }
+}

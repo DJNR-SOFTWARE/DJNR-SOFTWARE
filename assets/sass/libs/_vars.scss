@@ -1,0 +1,72 @@
+// Misc.
+$misc: (
+  z-index-base: 10000,
+);
+
+// Duration.
+$duration: (
+  menu: 0.1s,
+  banner: 0.1s,
+  transition: 0.1s,
+);
+
+// Size.
+$size: (
+  border-radius: 4px,
+  element-height: 3.25rem,
+  element-margin: 1rem,
+  container-width: 80rem,
+  header-height: 0.5rem,
+  inner-width: 75rem,
+  menu-width: 20rem,
+);
+
+// Font.
+$font: (
+  family: (
+    "Raleway",
+    Arial,
+    Helvetica,
+    sans-serif,
+  ),
+  family-fixed: (
+    "Courier New",
+    monospace,
+  ),
+  weight: 400,
+  weight-light: 300,
+  weight-xlite: 200,
+  weight-bold: 600,
+);
+
+// Palette.
+$palette: (
+  bg: #e8ebf7,
+  fg: #2e86ab,
+  fg-bold: #e87049,
+  fg-light: rgba(255, 255, 255, 0.4),
+  border: rgba(0, 0, 0, 0.25),
+  border-bg: rgba(0, 0, 0, 0.075),
+  border-lt: rgba(0, 0, 0, 0.025),
+  highlight: accent1,
+  accent1: (
+    bg: #bc44b8,
+    fg: #ffcf00,
+    fg-bold: #e8ebf7,
+    fg-light: rgba(255, 255, 255, 0.4),
+    border: rgba(255, 255, 255, 0.25),
+    border-bg: rgba(255, 255, 255, 0.075),
+    border-lt: rgba(255, 255, 255, 0.025),
+    highlight: accent1,
+  ),
+  accent2: (
+    bg: #2e86ab,
+    fg: #ffcf00,
+    fg-bold: #e8ebf7,
+    fg-light: rgba(255, 255, 255, 0.4),
+    border: rgba(255, 255, 255, 0.25),
+    border-bg: rgba(255, 255, 255, 0.075),
+    border-lt: rgba(255, 255, 255, 0.025),
+    highlight: accent1,
+  ),
+);

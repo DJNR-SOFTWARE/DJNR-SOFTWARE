@@ -1,28 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <link rel="icon" type="image/png" href="./img/DJNRLogoSquare2.png">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
     <title>DJNR Software</title>
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="bg-light">
-    <div class="container">
-      <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="./img/DJNRLogo.png" alt="" width="200" height="71">
-      </div>
-      <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; DJNR Software Ltd, Registered in England and Wales, Company No. 12295153 </p>
-      </footer>
-    </div>
+  <body class="is-preload">
+    <!-- Header -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <header>
+      <div class="inner">
+        <a class="logo" href="index.html">
+          <img
+            src="images/DJNRLogo.svg"
+            alt="DJNR Software"
+            style="margin: 0.5rem;"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Nav 
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="elements.html">Elements</a></li>
+        <li><a href="generic.html">Generic</a></li>
+      </ul>
+	</nav>
+-->
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h1>Your software, now!</h1>
+        <p>
+          We are a London based software house, providing bespoke software
+          development solutions for companies.<br />
+          Especially for start-ups!
+        </p>
+      </div>
+      <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+
+    <!-- Highlights -->
+    <section class="wrapper">
+      <div class="inner">
+        <h2>Our Services</h2>
+        <p>
+          What you need might be an end to end software development solution or
+          just a specific part of it. We are happy to help in either case.
+        </p>
+
+        <p>
+          We provide a wide variety of services and you can choose to get all or
+          just one for your project.
+        </p>
+
+        <div class="highlights">
+          <section>
+            <div class="content">
+              <header>
+                <img
+                  src="images/ProjectManagement.svg"
+                  alt="Project Management"
+                  height="120"
+                  style="margin-bottom: 15px;"
+                />
+                <h3>Project Management</h3>
+              </header>
+              <p>
+                Companies might need an external project manager when they have
+                an unusual project or when internal teams working with a new
+                vendor on that project. We will provide project management
+                solutions (for both waterfall and agile approach) by;
+              </p>
+              <ul>
+                <li>
+                  Implementing necessary Jira, Trello or other project
+                  management software.
+                </li>
+                <li>Implementing workflow that is suitable for the client</li>
+              </ul>
+              <p>
+                The end product will be up & running project management software
+                and project management documentation.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img
+                  src="images/BusinessAnalysis.svg"
+                  alt="Business Analysis"
+                  height="120"
+                  style="margin-bottom: 15px;"
+                />
+                <h3>Business Analysis</h3>
+              </header>
+              <p>
+                Understanding the real business needs, determining the gap
+                between the business needs and the already existing
+                functionality of software infrastructure (requirements) right,
+                modeling the business correctly are all crucial to complete a
+                software project successfully. We will provide the following
+                services;
+              </p>
+              <ul>
+                <li>
+                  Meeting with business stakeholders to understand the
+                  requirements
+                </li>
+                <li>Modeling business requirements</li>
+                <li>Creating business workflows and use-case scenarios</li>
+                <li>Writing analysis documents</li>
+                <li>
+                  Helping communication between business stakeholders and the
+                  development team
+                </li>
+              </ul>
+              <p>
+                The end product will be a business analysis document.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img
+                  src="images/TechnicalAnalysis.svg"
+                  alt="Technical Analysis"
+                  height="120"
+                  style="margin-bottom: 15px;"
+                />
+                <h3>Technical Analysis</h3>
+              </header>
+              <p>
+                The technical analysis states how a requirement in the business
+                analysis will be implemented. It describes which technology, in
+                the companies technology stack, will be used where and how. It
+                also may describe more technical subjects like which tables need
+                to be created, what columns will they have, which API’s will be
+                introduced, what will be their parameters, etc. so that
+                development team will focus on just coding and architectural
+                integrity maintained. Although technical analysis is not
+                mandatory, we can provide the following services;
+              </p>
+              <ul>
+                <li>Modeling database</li>
+                <li>Modeling API</li>
+                <li>Modeling C# code</li>
+                <li>Writing analysis documents</li>
+              </ul>
+              <p>
+                The end product will be a technical analysis document.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img
+                  src="images/Architecture.svg"
+                  alt="Architecture"
+                  height="120"
+                  style="margin-bottom: 15px;"
+                />
+                <h3>Architecture</h3>
+              </header>
+              <p>
+                Architecture, in the software development lifecycle, is
+                designing the whole software infrastructure at a high-level. So
+                it means choosing which technologies to be used, coding
+                standards, development methodologies and explaining why. We will
+                provide the following services;
+              </p>
+              <ul>
+                <li>Designing technological infrastructure</li>
+                <li>
+                  Choosing technological components to meet the requirements
+                </li>
+                <li>Conducting code reviews</li>
+                <li>Writing an architecture document</li>
+              </ul>
+              <p>
+                The end product will be an architecture document.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img
+                  src="images/SoftwareDevelopment.svg"
+                  alt="Software Development"
+                  height="120"
+                  style="margin-bottom: 15px;"
+                />
+                <h3>Software Development</h3>
+              </header>
+              <p>
+                And of course the software development itself. We will provide
+                development services in the following technologies;
+              </p>
+              <ul>
+                <li>.Net (C#)</li>
+                <li>.Net Core (C#)</li>
+                <li>Unity (C#)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>SQL (Oracle, MS SQL Server, Postgres)</li>
+                <li>PL/SQL</li>
+              </ul>
+              <p>
+                The end product will be software and its source code.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="wrapper">
+      <div class="inner">
+        <img
+          src="images/EMail.svg"
+          alt="Get In Touch"
+          height="120"
+          style="margin-bottom: 15px;"
+        />
+        <h2>Get In Touch</h2>
+        <p>
+          Contact us by dropping an e-mail to <b>hi@djnr.software</b> and let's
+          get started.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="wrapper">
+      <div class="inner">
+        <h2>Technologies</h2>
+        <p>
+          Here are some technologies that we have used before in our projects.
+        </p>
+        <h3 class="techHeader">Platforms</h3>
+
+        <div class="testimonials">
+          <section>
+            <div class="tech">
+              <img src="images/techStack/dotNet.png" alt=".Net Framework" />
+              <p>.Net Framework</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/dotNetCore.png" alt=".Net Core" />
+              <p>.Net Core</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/html5.png" alt="HTML 5" />
+              <p>HTML 5</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img
+                src="images/techStack/OracleDatabase.png"
+                alt="Oracle Database"
+              />
+              <p>Oracle Database</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/Unity.png" alt="Unity" />
+              <p>Unity</p>
+            </div>
+          </section>
+        </div>
+
+        <h3 class="techHeader">Languages</h3>
+
+        <div class="testimonials">
+          <section>
+            <div class="tech">
+              <img src="images/techStack/CSharp.png" alt="C#" />
+              <p>C#</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/SQL.png" alt="SQL" />
+              <p>SQL</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/PLSQL.png" alt="PL/SQL" />
+              <p>PL/SQL</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/HTML5.png" alt="HTML" />
+              <p>HTML</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/CSS.png" alt="CSS" />
+              <p>CSS</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/JS.png" alt="Java Script" />
+              <p>Java Script</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/React.png" alt="React" />
+              <p>React</p>
+            </div>
+          </section>
+        </div>
+
+        <h3 class="techHeader">Databases</h3>
+
+        <div class="testimonials">
+          <section>
+            <div class="tech">
+              <img src="images/techStack/MSSQLServer.png" alt="MS SQL Server" />
+              <p>MS SQL Server</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img
+                src="images/techStack/OracleDatabase.png"
+                alt="Oracle Database"
+              />
+              <p>Oracle Database</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/PostgreSQL.png" alt="Postrgre SQL" />
+              <p>Postgre SQL</p>
+            </div>
+          </section>
+        </div>
+
+        <h3 class="techHeader">Cloud Platforms</h3>
+
+        <div class="testimonials">
+          <section>
+            <div class="tech">
+              <img src="images/techStack/Azure.png" alt="Azure" />
+              <p>MS Azure</p>
+            </div>
+          </section>
+        </div>
+
+        <h3 class="techHeader">Others</h3>
+
+        <div class="testimonials">
+          <section>
+            <div class="tech">
+              <img src="images/techStack/ActiveMQ.png" alt="Apache ActiveMQ" />
+              <p>Apache ActiveMQ</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/Git.png" alt="Git" />
+              <p>Git</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/GitHub.png" alt="GitHub" />
+              <p>GitHub</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/BitBucket.png" alt="BitBucket" />
+              <p>BitBucket</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/TeamCity.png" alt="Team City" />
+              <p>Team City</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/OctopusDeploy.png" alt="Octopus" />
+              <p>Octopus</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="tech">
+              <img src="images/techStack/Jira.png" alt="Jira" />
+              <p>Jira & Confluence</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+          &copy; DJNR Software Ltd<br />
+          Registered in England and Wales, Company No. 12295153
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
